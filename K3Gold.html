@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>K3Gold</title>
+<style> 
+    *{padding: 0;margin: 0;}
+    body{width: 100vw;height: 100vh;display: flex;justify-content: center;align-items: center;background-color: rgba(225,225,225,1);}
+    p{font-size: 10em;transform: rotate(-25deg) skew(25deg);color: rgb(242, 193, 77);}
+</style>
+</head>
+<body>
+<p>K3Gold</p>
+<script>
+    const K3Gold = document.querySelector("p");
+    var long = 30,shadow = "";
+    for(let i = 1; i <= long; i++)
+        shadow += `-${i}px ${i}px #fff,`;
+    K3Gold.style.textShadow = shadow.slice(0,-1);
+</script>
+</body>
+</html>
